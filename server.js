@@ -23,7 +23,7 @@ function createArticle (content){
                             </head>
                             <body>
                                 <div class="center">
-                                    <img src="/ui/madi.png" class="img-medium"/><span><a href='http://kedarcoc.imad.hasura-app.io/'>home</a></span>
+                                    <img src="/ui/madi.png" class="img-medium"/>
                                 </div>
                                 <br>
                                 <div class="jumbotron">
@@ -37,11 +37,13 @@ function createArticle (content){
                                 </div>
                                 <div class="articles">
                                     <bold>
-                                    <a href='http://kedarcoc.imad.hasura-app.io/article_one'>Article 1</a>
+                                    <a href='http://kedarcoc.imad.hasura-app.io/'>Home &nbsp&nbsp</a>
                                     
-                                    <a href='http://kedarcoc.imad.hasura-app.io/article_two'>Article 2</a>
+                                    <a href='http://kedarcoc.imad.hasura-app.io/article_one'>Article 1 &nbsp&nbsp</a>
                                     
-                                    <a href='http://kedarcoc.imad.hasura-app.io/article_three'>Article 3</a>
+                                    <a href='http://kedarcoc.imad.hasura-app.io/article_two'>Article 2 &nbsp&nbsp</a>
+                                    
+                                    <a href='http://kedarcoc.imad.hasura-app.io/article_three'>Article 3 &nbsp&nbsp</a>
                                     
                                     </bold>
                                 </div>
