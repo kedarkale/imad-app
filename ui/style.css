@@ -20,9 +20,11 @@ body {
     height: 200px;
 }
 
-.class{
+.articles{
     width:100%;
     color:#fff;
+    margin:auto;
+    padding-top:30px;
 }
 
 
