@@ -27,19 +27,19 @@ function createArticle (content){
                                 </div>
                                 <br>
                                 <div class="jumbotron">
-                                    <h1 class="display-3">${heading}</h1>
-                                    <h5 class="display-4">${date}</h5>
+                                    <h3 class="display-3">${heading}</h3>
+                                    <h6 class="display-4">${date}</h6>
                                 </div>
-                                <div>
+                                <div class = "container">
                                     <p>
                                         ${matter}
                                     </p>
                                 </div>
                                 <div class="articles">
                                     <bold>
-                                    <a href='http://kedarcoc.imad.hasura-app.io/article_one'>Article 1   </a>
+                                    <a href='http://kedarcoc.imad.hasura-app.io/article_one'>Article 1</a>
                                     
-                                    <a href='http://kedarcoc.imad.hasura-app.io/article_two'>Article 2   </a>
+                                    <a href='http://kedarcoc.imad.hasura-app.io/article_two'>Article 2</a>
                                     
                                     <a href='http://kedarcoc.imad.hasura-app.io/article_three'>Article 3</a>
                                     
