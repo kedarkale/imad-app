@@ -23,7 +23,7 @@ function createArticle (content){
                             </head>
                             <body>
                                 <div class="center">
-                                    <img src="/ui/madi.png" class="img-medium"/>
+                                    <img src="/ui/madi.png" class="img-medium"/><span><a href='http://kedarcoc.imad.hasura-app.io/'>home</a></span>
                                 </div>
                                 <br>
                                 <div class="jumbotron">
