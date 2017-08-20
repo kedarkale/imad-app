@@ -88,11 +88,12 @@ function updateVisits (){
     return visits.toString();
 }
 
-
+app.get('/visits', function (req, res) {
+  res.send(updateVisits());
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-  res.send(updateVisits());
 });
 
 app.get('/:article_name', function (req, res) {
