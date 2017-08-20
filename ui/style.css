@@ -38,3 +38,6 @@ p {
     text-align:center;
 }
 
+.alert.alert-primary{
+    width:40%;
+}
