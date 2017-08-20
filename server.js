@@ -82,9 +82,17 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     },
 }
 
+var visits=0;
+function updateVisits (){
+    visits+=1;
+    return visits.toString();
+}
+
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(updateVisits());
 });
 
 app.get('/:article_name', function (req, res) {
