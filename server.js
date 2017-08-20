@@ -101,6 +101,9 @@ app.get('/:article_name', function (req, res) {
    res.send(createArticle(articles[article_name]));
 });
 
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
