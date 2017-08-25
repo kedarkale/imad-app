@@ -65,7 +65,8 @@ function createArticle (content){
     
 }
 
-var articles =  {
+//deprecated
+/*var articles =  {
     article_one : {
         title : 'A1 | kedar',
         date : '16/08/17',
@@ -89,7 +90,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         matter : `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose `,
         
     },
-}
+}*/
 
 var visits=0;
 function updateVisits (){
@@ -118,7 +119,18 @@ app.get('/testdb', function (req, res) {
 
 app.get('/:article_name', function (req, res) {
    var article_name = req.params.article_name; 
-   res.send(createArticle(articles[article_name]));
+   pool.query("SELECT * FROM articles WHERE title='"+article_name+"'",function (error,result){
+       if(error){
+           res.status(500).send(error.toString());
+       }else{
+           if (res.rows.length===0){
+               res.status(404).send('Árticle not found');
+           }else{
+               var articleData = result.rows[0];
+               res.send(createArticle(articleData));
+           }
+       }
+   });
 });
 
 app.get('/ui/main.js', function (req, res) {
