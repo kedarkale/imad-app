@@ -111,7 +111,7 @@ app.get('/testdb', function (req, res) {
       if (error){
           res.status(500).send(error.toString());
       }else{
-          res.send(JSON.stringify(result));
+          res.send(JSON.stringify(result.rows));
       }
   });
 });
