@@ -56,8 +56,8 @@ function createArticle (content){
                                     
                                     </bold>
                                 </div>
-                                //do not increment counter for every sub-page
-                                //<script type="text/javascript" src="/ui/main.js">
+                                <!--do not increment counter for every sub-page-->
+                                <!--<script type="text/javascript" src="/ui/main.js">-->
                                 </script>
                             </body>
                         </html>`
