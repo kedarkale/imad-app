@@ -37,7 +37,7 @@ function createArticle (content){
                                 <br>
                                 <div class="jumbotron">
                                     <h3 class="display-3">${heading}</h3>
-                                    <h6 class="display-4">${date}</h6>
+                                    <h6 class="display-4">${date.toDateString()}</h6>
                                 </div>
                                 <div class = "container">
                                     <p>
