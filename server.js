@@ -8,7 +8,7 @@ var config ={
     database:'kedarcoc',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:'db-kedarcoc-51394',
+    password:'---',
 }
 
 var app = express();
