@@ -121,7 +121,7 @@ app.get('/testdb', function (req, res) {
 app.get('/:article_name', function (req, res) {
    var article_name = req.params.article_name; 
    console.log(`about to query`);
-   pool.query("SELECT * FROM articles WHERE link = $1",[articlename],function (error,result){
+   pool.query("SELECT * FROM articles WHERE link = $1",[article_name],function (error,result){
        console.log(`fired query`);
        if(error){
            res.status(500).send(error.toString());
